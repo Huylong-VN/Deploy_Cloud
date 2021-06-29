@@ -1,243 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Shop Toys for Kids</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link style="border-radius:10%" rel="shortcut icon"
-        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGnwnDOHl63mzHtYONaoyi6MwkW61GBqynO5Tp-FYs6bwULPUzkavoDHW_xK0cafduIn5QnTM&usqp=CAc"
-        type="image/x-icon">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        #nav{
-            background-color: rebeccapurple !important;
-        }
-        .img-size{
-            height: 500px;
-        }
-        footer {
-            color: royalblue;
-            display: flex ;
-            justify-content: center;
-        }
-        .animationchim{
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-weight: bold;
-            color: red;
-            position: relative;
-            animation: fly 5s linear alternate infinite ;
-        }@keyframes fly{
-            0%{
-                left: 0%;
-                color: blue;
-                transform: rotate(0deg);
-            }
-            10%{
-                left: 5%;
-            }
-            15%{
-                left: 10%;
-            }
-            40%{
-                left: 40%;
-            }
-            45%{
-                left: 45%;
-                color: yellow;
-            }
-            50%{
-                left: 50%;
-                transform: rotate(5deg);
-                color: brown;
-            }
-            55%{
-                left: 55%;
-            }
-            65%{
-                left: 65%;
-            }
-            75%{
-                left: 70%;
-            }
-            100%{
-                left: 75%;
-            }
-
-        }
-        
-    </style>
+  <script data-ad-client="ca-pub-4802060218454967" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <title>Home Page</title>
 </head>
+<?php session_start(); ?>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.php">WEB</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.php">Home Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.facebook.com/h18620010">Contact For Us</a>
+        </li>
+        <?php if(isset($_SESSION['admin'])){echo("<li class='nav-item'>
+          <a class='nav-link' href='qlsong.php' tabindex='-1'>Manage songs</a>
+        </li>");} ?>
 
-<body>
-    <nav style="line-height: 32px;" class="navbar navbar-expand-lg navbar-dark" id="nav">
-        <a class="navbar-brand" href="#"><h3>ATN</h3></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Toys for EveryOne</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        List Toys
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Toys 1</a>
-                        <a class="dropdown-item" href="#">Toys 2</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Toys 3</a>
-                    </div>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-    
-    <div class="container">
-        <div class="row">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://tetthieunhi.mykingdom.com.vn/html/images/banner.jpg" class="d-block w-100 img-size"
-                            alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://www.chili.vn/blogs/wp-content/uploads/2018/01/xu-huong-kinh-doanh-1200x682.jpg" class="d-block w-100 img-size"
-                            alt="...">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-        <hr>
-        <p class="animationchim">Đang quét Hacker for ATN Company ~~ <i style="font-size: 2.5rem;color: chartreuse;" class="fas fa-user-injured"></i></p>
-        <h3 style="text-decoration:wavy;"><b style="color: red;">1.</b> List of toys</h3>
-        <hr>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="card">
-                    <img class="card-img-top"
-                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/ECOIFFIER/P16108/P16108_1.jpg"
-                        alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Magic egg</h4>
-                        <p class="card-text">Text</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <img class="card-img-top"
-                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/MAISTO/MT39964/MT39964_1.jpg"
-                        alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Toy car assembly 1:24 Ferrari Enzo</h4>
-                        <p class="card-text">Text</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <img class="card-img-top"
-                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/e/0/e0771_e0694_3.jpg"
-                        alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Original Optimus Prime model 7 inch</h4>
-                        <p class="card-text">Text</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <img class="card-img-top"
-                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/e/1/e1164_e0618_3.jpg"
-                        alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Original 7 inch Bumblebee model</h4>
-                        <p class="card-text">Text</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <img class="card-img-top"
-                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/e/1/e1163_e0618_3.jpg"
-                        alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">4.5 inch original Starscream model</h4>
-                        <p class="card-text">Text</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <img class="card-img-top"
-                        src="https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/7c9924b6276ad76a951c1e786fcf2062/magento/BATTAT/BT2539Z/BT2539Z_1.jpg"
-                        alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Assembled brick car</h4>
-                        <p class="card-text">Text</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-end">
-                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
-        </nav>
+        <?php  if(isset($_SESSION['admin']) or isset($_SESSION['user'])){echo("<li class='nav-item'>
+          <a class='nav-link' href='cart.php'><i class='fas fa-shopping-cart'></i></a>
+        </li>");}  ?>
+        
+      </ul>
+      <form action="search.php" method="POST" class="d-flex">
+        <input name="input" required class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button name="search" class="btn btn-outline-danger" type="submit">Search</button>
+      </form>
+      <?php
+      if(isset($_SESSION['user']) or isset($_SESSION['admin']))
+      {
+          echo "<a style='margin-left: 1%;'  href='delete.php' class='btn btn-warning btn-outline-success'>LogOut</a>";
+      }
+      else{
+        echo "<a style='margin-left: 1%;'  href='signin.php' class='btn btn-warning btn-outline-success'>LogIn</a>";
+      }
+        ?>
     </div>
-
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4">ATN Company</h1>
-            <p class="lead">ATN is a Vietnamese company which is selling toys to teenagers in many provinces all over Vietnam. The company has the revenue over 500.000 dollars/year. Currently each shop has its own database to store transactions for that shop only. Each shop has to send the sale data to the board director monthly and the board director need lots of time to summarize the data collected from all the shops. Besides the board can’t see the stock information update in real time..</p>
-        </div>
+  </div>
+</nav>
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://o.vdoc.vn/data/image/2021/03/17/loi-bai-hat-sao-cha-khong-phan-manh-quynh-700.jpg" style="height:600px" class="d-block w-100" alt="...">
     </div>
-    <footer class="footer">
-        <h4>Copyright registration year: 2021 belongs to ATN . company</h4>
-    </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://i.ytimg.com/vi/jGdMu2KoeAM/maxresdefault.jpg" style="height:600px" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.ytimg.com/vi/ewFmBXXVKG8/maxresdefault.jpg" class="d-block w-100" alt="..." style="height:600px">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h3 style="color:blue">I. List Song</h3>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+      <?php
+        include_once("config.php");
+        $result=mysqli_query($con,"select * from song order by SongID DESC");
+        while ($row = mysqli_fetch_array($result)) {
+          echo "<div class='card border-success mb-3' style='max-width: 50%;'>
+                      <div class='card-header bg-transparent border-success'>".$row['SongName']."</div>
+                      <div class='card-body text-success'>
+                          <p class='card-text'><img src='".$row['SongImg']."' class='img-fluid rounded' style='height:13rem;width:100%' /></p>
+                      </div>
+                      <div class='card-footer bg-transparent border-success'>
+                      <a class='btn btn-warning' href='detail.php?id=".$row['SongID']."'>Listening</a>
+                      <a class='btn btn-primary' href='cart.php?id=".$row['SongID']."'>Add Cart</a>
+                      </div>
+                      </div>
+                      ";
+                  }
+        
+        ?>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 
 </html>
