@@ -17,8 +17,7 @@
 <body>
 
     <nav style="line-height: 32px;" class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><img src="logo.png" style="height: 28px;width: 40px;border-radius: 10%;"
-                alt=""></a>
+        <a class="navbar-brand" href="#"><h3>ATN</h3></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
