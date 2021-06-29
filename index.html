@@ -12,11 +12,90 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        #nav{
+            background-color: rebeccapurple !important;
+        }
+        .img-size{
+            height: 500px;
+        }
+        footer {
+            color: royalblue;
+            display: flex ;
+            justify-content: center;
+        }
+        .animationchim{
+            color: red;
+            position: relative;
+            animation: fly 3s linear alternate infinite ;
+        }@keyframes fly{
+            0%{
+                left: 0%;
+            }
+            5%{
+                left: 5%;
+            }
+            10%{
+                left: 10%;
+            }
+            15%{
+                left: 15%;
+            }
+            20%{
+                left: 20%;
+            }
+            25%{
+                left: 25%;
+            }
+            30%{
+                left: 30%;
+            }
+            35%{
+                left: 35%;
+            }
+            40%{
+                left: 40%;
+            }
+            45%{
+                left: 45%;
+            }
+            50%{
+                left: 50%;
+            }
+            55%{
+                left: 55%;
+            }
+            60%{
+                left: 60%;
+            }
+            65%{
+                left: 65%;
+            }
+            70%{
+                left: 70%;
+            }
+            75%{
+                left: 75%;
+            }
+            80%{
+                left: 80%;
+            }
+            85%{
+                left: 85%;
+            }
+            90%{
+                left: 90%;
+            }
+            100%{
+                left: 100%;
+            }
+        }
+        
+    </style>
 </head>
 
 <body>
-
-    <nav style="line-height: 32px;" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav style="line-height: 32px;" class="navbar navbar-expand-lg navbar-dark" id="nav">
         <a class="navbar-brand" href="#"><h3>ATN</h3></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +138,11 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="https://tetthieunhi.mykingdom.com.vn/html/images/banner.jpg" class="d-block w-100"
+                        <img src="https://tetthieunhi.mykingdom.com.vn/html/images/banner.jpg" class="d-block w-100 img-size"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.chili.vn/blogs/wp-content/uploads/2018/01/xu-huong-kinh-doanh-1200x682.jpg" class="d-block w-100 img-size"
                             alt="...">
                     </div>
                 </div>
@@ -73,7 +156,10 @@
                 </a>
             </div>
         </div>
-        <h3 style="text-decoration:wavy;">1. List of toys</h3>
+        <hr>
+        <p class="animationchim">Chim đang bay ~~~</p>
+        <h3 style="text-decoration:wavy;"><b style="color: red;">1.</b> List of toys</h3>
+        <hr>
         <div class="row">
             <div class="col-lg-4">
                 <div class="card">
@@ -155,19 +241,13 @@
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">Baby toys</h1>
-            <p class="lead">Referring to jigsaw puzzles without mentioning Lego is a huge omission! The first place on
-                this list is for the Lego Duplo: Train to learn to count numbers.
-                Some features of this toy set:
-
-                Prestigious brand, proven quality and safety
-                Made from high quality virgin plastic
-                Includes many different puzzle pieces with large puzzle sizes to suit 2-year-olds
-                This set of toys helps children develop their observation ability, the ability to handle situations,
-                learn to count from 0 to 9 .
-                Thanks to the movable wheels, it also helps children enhance movement.</p>
+            <h1 class="display-4">ATN Company</h1>
+            <p class="lead">ATN is a Vietnamese company which is selling toys to teenagers in many provinces all over Vietnam. The company has the revenue over 500.000 dollars/year. Currently each shop has its own database to store transactions for that shop only. Each shop has to send the sale data to the board director monthly and the board director need lots of time to summarize the data collected from all the shops. Besides the board can’t see the stock information update in real time..</p>
         </div>
     </div>
+    <footer class="footer">
+        <h4>Copyright registration year: 2021 belongs to ATN . company</h4>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
