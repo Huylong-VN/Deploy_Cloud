@@ -157,7 +157,7 @@
             </div>
         </div>
         <hr>
-        <p class="animationchim">Chim đang bay ~~~</p>
+        <p class="animationchim">Đang quét Hacker ~~~ ~~~ ~~~</p>
         <h3 style="text-decoration:wavy;"><b style="color: red;">1.</b> List of toys</h3>
         <hr>
         <div class="row">
