@@ -12,6 +12,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         #nav{
             background-color: rebeccapurple !important;
@@ -25,21 +26,22 @@
             justify-content: center;
         }
         .animationchim{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
             color: red;
             position: relative;
             animation: fly 5s linear alternate infinite ;
         }@keyframes fly{
             0%{
                 left: 0%;
-            }
-            5%{
-                left: 5%;
+                color: blue;
+                transform: rotate(0deg);
             }
             10%{
-                left: 10%;
+                left: 5%;
             }
             15%{
-                left: 15%;
+                left: 10%;
             }
             20%{
                 left: 20%;
@@ -47,20 +49,17 @@
             25%{
                 left: 25%;
             }
-            30%{
-                left: 30%;
-            }
-            35%{
-                left: 35%;
-            }
             40%{
                 left: 40%;
             }
             45%{
                 left: 45%;
+                color: yellow;
             }
             50%{
                 left: 50%;
+                transform: rotate(5deg);
+                color: brown;
             }
             55%{
                 left: 55%;
@@ -71,24 +70,13 @@
             65%{
                 left: 65%;
             }
-            70%{
-                left: 70%;
-            }
-            75%{
-                left: 75%;
-            }
             80%{
                 left: 80%;
             }
-            85%{
+            100%{
                 left: 85%;
             }
-            90%{
-                left: 90%;
-            }
-            100%{
-                left: 100%;
-            }
+
         }
         
     </style>
@@ -157,7 +145,7 @@
             </div>
         </div>
         <hr>
-        <p class="animationchim">Đang quét Hacker ~~~ ~~~ ~~~</p>
+        <p class="animationchim">Đang quét Hacker for ATN Company ~~ <i style="font-size: 2.5rem;color: chartreuse;" class="fas fa-user-injured"></i></p>
         <h3 style="text-decoration:wavy;"><b style="color: red;">1.</b> List of toys</h3>
         <hr>
         <div class="row">
