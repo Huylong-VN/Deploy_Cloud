@@ -27,7 +27,7 @@
         .animationchim{
             color: red;
             position: relative;
-            animation: fly 3s linear alternate infinite ;
+            animation: fly 5s linear alternate infinite ;
         }@keyframes fly{
             0%{
                 left: 0%;
