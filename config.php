@@ -1,12 +1,8 @@
 <?php
-	$server = "54.236.43.60";
+	$server ="18.117.156.13";
 	$user = "huy";
-	$pass = "123";
-	$database = "anhhuy";
-	$connect = mysqli_connect($server, $user, $pass, $database); 
-	mysqli_set_charset($connect, 'UTF8');
-	if (!$connect) {
-		die("Connect Failed:".mysqli_connect_error());
-		# code...
-	}
+	$pass = "huy";
+	$database = "atn";
+	$con = mysqli_connect($server, $user, $pass, $database); 
+	mysqli_set_charset($con, 'UTF8');
 ?>
